@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiente"
+
+    tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/estilo_campos"
+            android:hint="@string/email"
+            android:textColorHint="@color/branco"
+            android:textColor="@color/branco"
+            android:lines="1"
+            android:layout_below="@id/logo"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="10dp"/>
+
+
+        <EditText
+            android:id="@+id/txtSenha"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/estilo_campos"
+            android:hint="@string/senha"
+            android:textColorHint="@color/branco"
+            android:textColor="@color/branco"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:layout_below="@id/txtUsuario"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtNovoCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:textColor="@color/branco"
+            android:layout_below="@id/txtSenha"
+            android:layout_marginTop="20dp"
+            android:text="Não tenho cadastro"/>
+
+        <Button
+            android:id="@+id/bEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/estilo_campos"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:textColor="@color/branco"
+            android:layout_below="@id/txtNovoCadastro"
+            android:text="Entrar"/>
+
+                </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

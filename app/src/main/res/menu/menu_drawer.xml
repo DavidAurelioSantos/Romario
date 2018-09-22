@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/primary_items"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragmentPerfil"
+            android:icon="@drawable/ic_action_home"
+            android:title="@string/perfil"/>
+
+        <item
+            android:id="@+id/fragmentAddPedido"
+            android:icon="@drawable/ic_action_highlight"
+            android:title="@string/adicionar_pedido" />
+
+        <item
+            android:id="@+id/fragmentAcomPedido"
+            android:icon="@drawable/ic_action_highlight"
+            android:title="@string/acompanhar_pedido" />
+
+        <item
+            android:id="@+id/fragmentComoFunciona"
+            android:icon="@mipmap/ic_config"
+            android:title="@string/como_funciona" />
+
+        <item
+            android:id="@+id/fragmentSobre"
+            android:icon="@drawable/ic_navigation_menu"
+            android:title="@string/sobre" />
+
+
+        <item
+            android:id="@+id/sair"
+            android:icon="@drawable/ic_navigation_menu"
+            android:title="@string/sair"/>
+    </group>
+</menu>

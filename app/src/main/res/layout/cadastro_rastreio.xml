@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtRastreio"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/estilo_campos"
+        android:hint="@string/codigoRastreio"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/branco" />
+
+    <EditText
+        android:id="@+id/txtNomeProduto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="223dp"
+        android:background="@drawable/estilo_campos"
+        android:hint="@string/apelidoProduto"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/branco" />
+
+    <Button
+        android:id="@+id/btnSalvarRastreio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="139dp"
+        android:background="@drawable/estilo_campos"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Salvar"
+        android:textColor="@color/branco" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/branco"
+        android:text="Insira os dados para acompanhar seu Pedido" />
+
+</RelativeLayout>
